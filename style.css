@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* torna os itens flexiveis para alterações e coloca o body da página no centro (horizontal e vertical) */
+body{ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 100vh; /*min-heigth para dizer que o elemento (body) está ocupando 100% da tela*/
+    background-image:url(./images/plano\ de\ fundo\ generico\(3\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    
+    width:420px;
+    background-color: rgba(255, 10, 10, 0);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+    backdrop-filter: blur(5px);
+}
+
+.container h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.caixa-botao{
+    /*muda a posição do elemento (caixa-botao) de acordo com minha necessidade*/
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+/* Definições para os inputs que estão dentro das divs*/ 
+.caixa-botao input{
+
+width: 100%;
+height: 100%;
+background-color: transparent;
+border: 2px solid;
+/* retira a linha branca de quando clica-se no input*/
+outline: none;
+color: #fff;
+padding: 20px 45px 20px 20px;
+
+
+
+/* mexe no texto de dentro dos inputs de texto*/
+}
+.caixa-botao input::placeholder{
+
+    color: rgb(43, 46, 46) 
+}
+.caixa-botao i{
+
+    position: absolute;
+    right: 0px;
+    top: 35%;
+}
+.lembrar-senha{
+    display: flex;
+    justify-content: space-between;
+}
+.lembrar-senha label input{
+
+accent-color: #fff;
+margin-right: 5px;
+}
+.lembrar-senha a{
+    text-decoration: none;
+    color: #fff;
+}
+.lembrar-senha a:hover{
+    text-decoration: underline
+
+}
+.login{
+    width: 100%;
+    height: 50px;
+    background-color: #fff; border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+    margin-top: 20px;
+    cursor: pointer;
+ 
+}
+.login:hover{
+
+    background: transparent;
+    color: #fff;
+    transition: 0.3s
+}
+.cadastro{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.cadastro:hover{
+
+    text-decoration: underline;
+}
